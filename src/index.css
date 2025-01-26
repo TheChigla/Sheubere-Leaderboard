@@ -1,0 +1,43 @@
+@import url('https://fonts.googleapis.com/css2?family=Cairo:wght@200..1000&family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&family=Space+Grotesk:wght@300..700&display=swap');
+
+* {
+  margin: 0;
+  padding: 0;
+  font-family: 'Cairo', sans-serif;
+}
+
+body {
+  background-image: url('./assets/bg.png');
+  background-size: cover;
+}
+
+#icon-1 {
+  position: absolute;
+  top: 20%;
+  left: 2%;
+  animation: 4s move linear infinite;
+
+  img {
+    width: 150px;
+  }
+}
+
+#icon-2 {
+  position: absolute;
+  bottom: 30%;
+  right: 2%;
+  animation: 4s move linear infinite;
+
+  img {
+    width: 150px;
+  }
+}
+
+@keyframes move {
+  50% {
+    transform: translateY(-45%);
+  }
+  100% {
+    transform: translateY(0);
+  }
+}
